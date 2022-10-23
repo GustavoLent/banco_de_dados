@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-23T01:08:24.927Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="0tgqjSB3PBujQTevCuRw" version="20.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-23T01:09:16.542Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36" etag="-o93xTXcOslMY2P-zmJl" version="20.5.1" type="github">
   <diagram id="H2VPaapsh_yX2YAZHY69" name="Página-1">
-    <mxGraphModel dx="1162" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1367" dy="941" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -225,7 +225,7 @@
         <mxCell id="tDW0GHBdHRXGgH65T0RM-176" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="303.175" y="640.0000000000001" width="317.88999999999993" height="219.9999999999999" as="geometry" />
         </mxCell>
-        <mxCell id="tDW0GHBdHRXGgH65T0RM-121" value="&lt;h1&gt;Compradores e Locatários&lt;/h1&gt;" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;" vertex="1" parent="tDW0GHBdHRXGgH65T0RM-176">
+        <mxCell id="tDW0GHBdHRXGgH65T0RM-121" value="&lt;h1&gt;Compradores e Locatários&lt;/h1&gt;" style="text;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;" vertex="1" parent="tDW0GHBdHRXGgH65T0RM-176">
           <mxGeometry width="317.89" height="40" as="geometry" />
         </mxCell>
         <mxCell id="tDW0GHBdHRXGgH65T0RM-157" value="" style="group;rotation=-90;" vertex="1" connectable="0" parent="tDW0GHBdHRXGgH65T0RM-176">
@@ -262,7 +262,7 @@
             <mxPoint x="131.75186999999994" y="39.639999999999986" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="tDW0GHBdHRXGgH65T0RM-138" value="&lt;h1&gt;Proprietários de Imóveis&lt;/h1&gt;" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;" vertex="1" parent="tDW0GHBdHRXGgH65T0RM-177">
+        <mxCell id="tDW0GHBdHRXGgH65T0RM-138" value="&lt;h1&gt;Proprietários de Imóveis&lt;/h1&gt;" style="text;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;" vertex="1" parent="tDW0GHBdHRXGgH65T0RM-177">
           <mxGeometry width="317.89" height="40" as="geometry" />
         </mxCell>
         <mxCell id="tDW0GHBdHRXGgH65T0RM-165" value="&lt;font face=&quot;Arial&quot;&gt;&lt;span style=&quot;font-size: 13.3333px;&quot;&gt;CPF&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-90;" vertex="1" parent="tDW0GHBdHRXGgH65T0RM-177">
@@ -283,7 +283,7 @@
         <mxCell id="tDW0GHBdHRXGgH65T0RM-172" value="&lt;span style=&quot;font-family: Arial; font-size: 13.3333px;&quot;&gt;Data de Admissão&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-90;" vertex="1" parent="tDW0GHBdHRXGgH65T0RM-178">
           <mxGeometry x="98.94000000000005" y="129.9999999999999" width="160" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="tDW0GHBdHRXGgH65T0RM-143" value="&lt;h1&gt;Corretores de Imobiliárias&lt;/h1&gt;" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;" vertex="1" parent="tDW0GHBdHRXGgH65T0RM-178">
+        <mxCell id="tDW0GHBdHRXGgH65T0RM-143" value="&lt;h1&gt;Corretores de Imobiliárias&lt;/h1&gt;" style="text;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;" vertex="1" parent="tDW0GHBdHRXGgH65T0RM-178">
           <mxGeometry width="317.89" height="40" as="geometry" />
         </mxCell>
         <mxCell id="tDW0GHBdHRXGgH65T0RM-173" style="edgeStyle=none;rounded=0;sketch=0;jumpStyle=none;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.437;entryY=0.987;entryDx=0;entryDy=0;entryPerimeter=0;shadow=0;strokeWidth=2;fontSize=22;startArrow=oval;startFill=1;endArrow=none;endFill=0;startSize=6;endSize=9;sourcePerimeterSpacing=3;targetPerimeterSpacing=11;" edge="1" parent="tDW0GHBdHRXGgH65T0RM-178" source="tDW0GHBdHRXGgH65T0RM-170" target="tDW0GHBdHRXGgH65T0RM-143">
