@@ -82,7 +82,7 @@ CREATE TABLE Imoveis (
     FOREIGN KEY (promessa_compradorlocatario, promessa_corretor) REFERENCES Promessas (id_compradorlocatario, id_corretor)
 );
 
-CREATE TABLE PrestaSerivco (
+CREATE TABLE PrestaServico (
     id_prestador INT NOT NULL,
     id_imovel VARCHAR(15) NOT NULL,
     data_inicio DATE NOT NULL,
