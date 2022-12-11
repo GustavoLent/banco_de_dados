@@ -88,7 +88,7 @@ CREATE TABLE PrestaSerivco (
     data_inicio DATE NOT NULL,
     data_fim DATE,
     valor DECIMAL(19,2) NOT NULL,
-    PRIMARY KEY (id_prestador, id_imovel),
+    PRIMARY KEY (id_prestador, id_imovel, data_inicio, data_fim),
     FOREIGN KEY (id_prestador) REFERENCES PrestadoresServico (id),
     FOREIGN KEY (id_imovel) REFERENCES Imoveis (inscricao)
 );
