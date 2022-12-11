@@ -42,7 +42,8 @@ SELECT id_imovel, COUNT(*) as total_manutencoes, SUM(valor) as valor_total
 FROM PrestaSerivco JOIN PrestadoresServico
 WHERE data_inicio >= '2022/11/10' AND data_inicio <= '2022/11/20' AND
     ((data_fim >= '2022/11/10' AND data_fim <= '2022/11/20') OR data_fim IS NULL) AND
-    id_imovel = '123456789123456'
+    id_imovel = '123456789123456' AND
+    descricao_servico = 'Manutenção'
 
 -- Exercicio 6
 SELECT p.nome, p.cpf
