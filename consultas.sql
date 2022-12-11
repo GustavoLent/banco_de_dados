@@ -42,7 +42,7 @@ LIMIT 3
 -- Exercicio 5 Quantas manutenções e o custo total das manutenções realizadas em um determinado 
 -- imóvel, num determinado período?
 SELECT id_imovel, COUNT(*) as total_manutencoes, SUM(valor) as valor_total
-FROM PrestaSerivco JOIN PrestadoresServico
+FROM PrestaServico JOIN PrestadoresServico
 WHERE data_inicio >= '2022-11-10' AND data_inicio <= '2022-12-20' AND
     ((data_fim >= '2022-11-10' AND data_fim <= '2022-12-20') OR data_fim IS NULL) AND
     id_imovel = '333333333333333' AND
