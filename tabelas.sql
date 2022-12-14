@@ -2,11 +2,12 @@ CREATE TABLE Pessoas (
     cpf CHAR(11) NOT NULL,
     rg CHAR(10) NOT NULL,
     nome VARCHAR(50) NOT NULL,
+    
     PRIMARY KEY (cpf)
 );
 
 CREATE TABLE Enderecos (
-    id INT NOT NULL,
+    codigo_endereco INT NOT NULL,
     nome_rua VARCHAR(20) NOT NULL,
     numero_rua INT NOT NULL,
     complemento VARCHAR(15),
@@ -22,7 +23,8 @@ CREATE TABLE Enderecos (
     numero_tel_2 INT,
     tipo VARCHAR(15) NOT NULL,
     pessoa CHAR(11),
-    PRIMARY KEY (id),
+
+    PRIMARY KEY (codigo_endereco),
     FOREIGN KEY (pessoa) REFERENCES Pessoas (cpf)
 );
 
@@ -30,6 +32,7 @@ CREATE TABLE CompradoresLocatarios (
     cpf CHAR(11) NOT NULL,
     profissao VARCHAR(20) NOT NULL,
     lista_preferencias VARCHAR(50) NOT NULL,
+
     PRIMARY KEY (cpf),
     FOREIGN KEY (cpf) REFERENCES Pessoas (cpf)
 );
@@ -37,14 +40,16 @@ CREATE TABLE CompradoresLocatarios (
 CREATE TABLE Proprietarios (
     cpf CHAR(11) NOT NULL,
     estado_civil VARCHAR(15) NOT NULL,
+
     PRIMARY KEY (cpf),
     FOREIGN KEY (cpf) REFERENCES Pessoas (cpf)
 );
 
 CREATE TABLE Corretores (
     cpf CHAR(11) NOT NULL,
-    cresci VARCHAR(8) NOT NULL,
+    creci VARCHAR(8) NOT NULL,
     data_admissao DATE NOT NULL,
+
     PRIMARY KEY (cpf),
     FOREIGN KEY (cpf) REFERENCES Pessoas (cpf)
 );
@@ -52,6 +57,7 @@ CREATE TABLE Corretores (
 CREATE TABLE PrestadoresServico (
     id INT NOT NULL,
     descricao_servico VARCHAR(30) NOT NULL,
+
     PRIMARY KEY (id)
 );
 
@@ -60,6 +66,7 @@ CREATE TABLE Promessas (
     id_corretor CHAR(11) NOT NULL,
     prioridade VARCHAR(8) NOT NULL,
     data_expiracao DATE NOT NULL,
+
     PRIMARY KEY (id_compradorlocatario, id_corretor),
     FOREIGN KEY (id_compradorlocatario) REFERENCES CompradoresLocatarios (cpf),
     FOREIGN KEY (id_corretor) REFERENCES Corretores (cpf)
@@ -72,12 +79,14 @@ CREATE TABLE Imoveis (
     preco_venda DECIMAL(19,2) NOT NULL,
     preco_aluguel DECIMAL(19,2) NOT NULL,
     tipo VARCHAR(6) NOT NULL,
+    disponivel VARCHAR(14),
     endereco INT NOT NULL,
     proprietario CHAR(11) NOT NULL,
     promessa_compradorlocatario CHAR(11),
     promessa_corretor CHAR(11),
+
     PRIMARY KEY (inscricao),
-    FOREIGN KEY (endereco) REFERENCES Enderecos (id),
+    FOREIGN KEY (endereco) REFERENCES Enderecos (codigo_endereco),
     FOREIGN KEY (proprietario) REFERENCES Proprietarios (cpf),
     FOREIGN KEY (promessa_compradorlocatario, promessa_corretor) REFERENCES Promessas (id_compradorlocatario, id_corretor)
 );
@@ -88,6 +97,7 @@ CREATE TABLE PrestaServico (
     data_inicio DATE NOT NULL,
     data_fim DATE,
     valor DECIMAL(19,2) NOT NULL,
+
     PRIMARY KEY (id_prestador, id_imovel, data_inicio, data_fim),
     FOREIGN KEY (id_prestador) REFERENCES PrestadoresServico (id),
     FOREIGN KEY (id_imovel) REFERENCES Imoveis (inscricao)
@@ -100,19 +110,22 @@ CREATE TABLE Edificacoes (
     habitada INT NOT NULL,
     destinacao VARCHAR(15) NOT NULL,
     imovel VARCHAR(15) NOT NULL,
+
     PRIMARY KEY (id),
     FOREIGN KEY (imovel) REFERENCES Imoveis (inscricao)
 );
 
 CREATE TABLE Contratos (
-    number_contrato INT NOT NULL,
+    numero_contrato INT NOT NULL,
     data_assinatura DATE NOT NULL,
+    data_expiracao DATE,
     tipo VARCHAR(8) NOT NULL,
     comprador_locatario CHAR(11) NOT NULL,
     proprietario CHAR(11) NOT NULL,
     corretor CHAR(11) NOT NULL,
     imovel VARCHAR(15) NOT NULL,
-    PRIMARY KEY (number_contrato),
+
+    PRIMARY KEY (numero_contrato),
     FOREIGN KEY (comprador_locatario) REFERENCES CompradoresLocatarios (cpf),
     FOREIGN KEY (proprietario) REFERENCES Proprietarios (cpf),
     FOREIGN KEY (corretor) REFERENCES Corretores (cpf),
