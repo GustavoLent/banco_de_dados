@@ -66,7 +66,7 @@ FROM CompradoresLocatarios, Contratos
 WHERE Contratos.comprador_locatario = cpf
 GROUP BY cpf
 ORDER BY total_negocios DESC
-LIMIT 3
+LIMIT 3;
 
 -- 5. Quantas manutenções e o custo total das manutenções realizadas em um determinado 
 -- imóvel, num determinado período?
@@ -116,7 +116,7 @@ WHERE
     c.tipo = 'Aluguel' AND
     c.comprador_locatario = p.cpf AND
     c.imovel = Imoveis.inscricao AND
-    Imoveis.endereco = Enderecos.codigo_endereco
+    Imoveis.endereco = Enderecos.codigo_endereco;
 
 -- 8. Quais são as características de um imóvel localizado num determinado endereço 
 -- (área, tipo do imóvel, se tem edificação, quantos quartos e banheiros, preço de venda/aluguel, etc.)

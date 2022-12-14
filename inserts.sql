@@ -23,14 +23,14 @@ INSERT INTO CompradoresLocatarios (cpf, profissao, lista_preferencias) VALUES
 ('33333333333', 'Vendedor(a)', 'De esquina');
 
 INSERT INTO Enderecos (codigo_endereco, nome_rua, numero_rua, complemento, bairro, cep, cidade, estado, ordem_tel_1, prefixo_tel_1, numero_tel_1, ordem_tel_2, prefixo_tel_2, numero_tel_2, tipo, pessoa) VALUES
-(1, 'Rua Silva', 1, NULL, 'Vila das Flores', 12569852, 'Campinas', 'SP', 1, 19, 12569874, NULL, NULL, NULL, 'Residencial', NULL);
-(2, 'Rua Jatoba', 5, NULL, 'Jardim America', 89526789, 'Rio Claro', 'SP', 1, 19, 45688525, NULL, NULL, NULL, 'Residencial', NULL);
-(3, 'Rua Gasparoto', 6, NULL, 'Jardim Paraíba', 89526785, 'Rio Claro', 'SP', 1, 19, 45688524, NULL, NULL, NULL, 'Residencial', NULL);
-(4, 'Rua Santos Dummond', 9, NULL, 'Bebedouro', 89526782, 'Rio Claro', 'SP', 1, 19, 45688526, NULL, NULL, NULL, 'Residencial', NULL);
-(5, 'Rua Cazuza', 11, NULL, 'Vila da Esperança', 89526783, 'Rio Claro', 'SP', 1, 19, 45688527, NULL, NULL, NULL, 'Residencial', NULL);
-(6, 'Rua Rayssa Leal', 12, NULL, 'Jardim Village', 89526784, 'Rio Claro', 'SP', 1, 19, 45688456, NULL, NULL, NULL, 'Residencial', NULL);
-(7, 'Rua Lent', 13, NULL, 'Lago da barra', 89526778, 'Rio Claro', 'SP', 1, 19, 45688544, NULL, NULL, NULL, 'Residencial', NULL);
-(8, 'Rua Fernandes', 14, NULL, 'Alameda Primaveril', 89526781, 'Rio Claro', 'SP', 1, 19, 45688888, NULL, NULL, NULL, 'Residencial', NULL);
+(1, 'Rua Silva', 1, NULL, 'Vila das Flores', 12569852, 'Campinas', 'SP', 1, 19, 12569874, NULL, NULL, NULL, 'Residencial', NULL),
+(2, 'Rua Jatoba', 5, NULL, 'Jardim America', 89526789, 'Rio Claro', 'SP', 1, 19, 45688525, NULL, NULL, NULL, 'Residencial', NULL),
+(3, 'Rua Gasparoto', 6, NULL, 'Jardim Paraíba', 89526785, 'Rio Claro', 'SP', 1, 19, 45688524, NULL, NULL, NULL, 'Residencial', NULL),
+(4, 'Rua Santos Dummond', 9, NULL, 'Bebedouro', 89526782, 'Rio Claro', 'SP', 1, 19, 45688526, NULL, NULL, NULL, 'Residencial', NULL),
+(5, 'Rua Cazuza', 11, NULL, 'Vila da Esperança', 89526783, 'Rio Claro', 'SP', 1, 19, 45688527, NULL, NULL, NULL, 'Residencial', NULL),
+(6, 'Rua Rayssa Leal', 12, NULL, 'Jardim Village', 89526784, 'Rio Claro', 'SP', 1, 19, 45688456, NULL, NULL, NULL, 'Residencial', NULL),
+(7, 'Rua Lent', 13, NULL, 'Lago da barra', 89526778, 'Rio Claro', 'SP', 1, 19, 45688544, NULL, NULL, NULL, 'Residencial', NULL),
+(8, 'Rua Fernandes', 14, NULL, 'Alameda Primaveril', 89526781, 'Rio Claro', 'SP', 1, 19, 45688888, NULL, NULL, NULL, 'Residencial', NULL),
 (9, 'Rua Del Rio', 15, NULL, 'Guedes', 89526781, 'Rio Claro', 'SP', 1, 19, 45688777, NULL, NULL, NULL, 'Residencial', NULL);
 
 INSERT INTO Promessas (id_compradorlocatario, id_corretor, prioridade, data_expiracao) VALUES
